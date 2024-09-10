@@ -8,8 +8,8 @@ from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationalRetrievalChain
 
 # Set up OpenAI API key
-os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
-openai.api_key = os.getenv('OPENAI_API_KEY')
+# os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
+openai.api_key = 'Your_OPENAI_API_KEY' # os.getenv('OPENAI_API_KEY')
 
 # Initialize the GPT model
 llm_model = "gpt-4o-mini"
